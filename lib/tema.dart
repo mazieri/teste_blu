@@ -25,8 +25,8 @@ class Tema extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (_) => const Splash(),
-        "home": (_) => const HomePage(),
-        "selected": (_) => const SelectedPage(),
+        "/home": (_) => const HomePage(),
+        "/selected": (_) => const SelectedPage(),
       },
     );
   }
