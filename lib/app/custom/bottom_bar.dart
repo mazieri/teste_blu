@@ -4,7 +4,10 @@ import 'dart:ui';
 import 'package:flutter_svg/svg.dart';
 
 Widget bottomBar() {
-  return ClipRect(
+  return ClipRRect(
+    borderRadius: const BorderRadius.all(
+      Radius.circular(12),
+    ),
     child: BackdropFilter(
       filter: ImageFilter.blur(
         sigmaX: 5,
@@ -14,7 +17,7 @@ Widget bottomBar() {
         width: 375,
         height: 70,
         decoration: BoxDecoration(
-          color: const Color(0xFFFFFFFF).withOpacity(0.75),
+          color: const Color(0xFFFFFFFF).withOpacity(0.70),
           borderRadius: const BorderRadius.all(
             Radius.circular(12),
           ),
