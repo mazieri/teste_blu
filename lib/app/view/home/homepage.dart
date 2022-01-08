@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter/services.dart';
 import 'package:teste_blu/pages.dart';
 import 'package:teste_blu/app/custom/bottom_bar.dart';
 
@@ -9,6 +10,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    //   statusBarColor: Colors.transparent,
+    //   statusBarBrightness: Brightness.light,
+    //   statusBarIconBrightness: Brightness.dark,
+    // ));
     // var altura = MediaQuery.of(context).size.height;
     // var largura = MediaQuery.of(context).size.width;
 
