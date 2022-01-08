@@ -111,6 +111,50 @@ class _ListaState extends State<Lista> {
                   ),
                 ),
               ),
+              Align(
+                alignment: const Alignment(-0.95, -0.925),
+                child: SizedBox(
+                  width: 160,
+                  height: 20,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        width: 70,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.black.withOpacity(0.5),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "Furnitured",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        width: 70,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.black.withOpacity(0.5),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "Pet Friendly",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         );
@@ -118,5 +162,3 @@ class _ListaState extends State<Lista> {
     );
   }
 }
-
-// index < 3 ? index + 1 : index > 3 ? index - 2 : 1
