@@ -51,24 +51,84 @@ class _ListaState extends State<Lista> {
                     flex: 3,
                     child: Container(
                       decoration: const BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.white,
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(12),
                           bottomRight: Radius.circular(12),
                         ),
                       ),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [],
-                          ),
-                          Row(
-                            children: [],
-                          ),
-                          Row(
-                            children: [],
-                          ),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  "\$ 23,456",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(
+                                  width: 15,
+                                ),
+                                Text(
+                                  "Studio Apartament",
+                                  style: TextStyle(
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "23 Cross, Hrbr Layout, Bangalore",
+                                  style: TextStyle(
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                SvgPicture.asset(
+                                  "assets/icons/bed.svg",
+                                  color: const Color(0xFF4668d9),
+                                ),
+                                Text(
+                                  "3 Bed",
+                                  style: TextStyle(
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                                SvgPicture.asset(
+                                  "assets/icons/bath.svg",
+                                  color: const Color(0xFF4668d9),
+                                ),
+                                Text(
+                                  "2 Bath",
+                                  style: TextStyle(
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                                SvgPicture.asset(
+                                  "assets/icons/car.svg",
+                                  color: const Color(0xFF4668d9),
+                                ),
+                                Text(
+                                  "2 Parking",
+                                  style: TextStyle(
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   )
