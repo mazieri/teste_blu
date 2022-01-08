@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="33.003" height="37.009" viewBox="0 0 33.003 37.009">
-    <!-- <defs>
-        <filter id="ohc5orsx8a" width="33.003" height="37.009" x="0" y="0" filterUnits="userSpaceOnUse">
-            <feOffset dy="3"/>
-            <feGaussianBlur result="blur" stdDeviation="3"/>
-            <feFlood flood-opacity=".161"/>
-            <feComposite in2="blur" operator="in"/>
-            <feComposite in="SourceGraphic"/>
-        </filter>
-    </defs> -->
-    <!-- <g style="isolation:isolate"> -->
-        <!-- <g filter="url(#ohc5orsx8a)" transform="translate(4.501 3.5) translate(-4.5 -3.5)"> -->
-            <path fill="#fc5770" stroke="#fff" d="M6 21a1 1 0 0 1-1-1V5.33A2.28 2.28 0 0 1 7.2 3h9.6A2.28 2.28 0 0 1 19 5.33V20a1 1 0 0 1-1.5.86l-5.67-3.21-5.33 3.2A1 1 0 0 1 6 21z" transform="translate(4.5 3.5)"/>
-        <!-- </g>
-    </g> -->
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;"><path d="M6.5,21.5c-0.549,0 -1,-0.451 -1,-1l0,-14.67c-0.028,-1.24 0.961,-2.287 2.2,-2.33l9.6,0c1.239,0.043 2.228,1.09 2.2,2.33l0,14.67c-0.003,0.546 -0.454,0.994 -1,0.994c-0.176,0 -0.348,-0.046 -0.5,-0.134l-5.67,-3.21l-5.33,3.2c-0.15,0.093 -0.323,0.145 -0.5,0.15Z" style="fill:#fc5770;fill-rule:nonzero;stroke:#fff;stroke-width:1px;"/></svg>
