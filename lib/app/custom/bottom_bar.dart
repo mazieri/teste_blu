@@ -23,10 +23,12 @@ Widget bottomBar() {
           ),
         ),
         child: Row(
+          key: const Key('linhaIcone'),
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           mainAxisSize: MainAxisSize.max,
           children: [
             IconButton(
+              key: const Key('iconeHome'),
               onPressed: () {},
               icon: SvgPicture.asset(
                 "assets/icons/home.svg",
@@ -34,6 +36,7 @@ Widget bottomBar() {
               ),
             ),
             IconButton(
+              key: const Key('iconeBookmark'),
               onPressed: () {},
               icon: SvgPicture.asset(
                 "assets/icons/bookmark.svg",
@@ -41,6 +44,7 @@ Widget bottomBar() {
               ),
             ),
             IconButton(
+              key: const Key('iconeMsg'),
               onPressed: () {},
               icon: SvgPicture.asset(
                 "assets/icons/msg.svg",
@@ -48,6 +52,7 @@ Widget bottomBar() {
               ),
             ),
             IconButton(
+              key: const Key('iconeMore'),
               onPressed: () {},
               icon: SvgPicture.asset(
                 "assets/icons/more.svg",

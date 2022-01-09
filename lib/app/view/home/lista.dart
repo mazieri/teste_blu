@@ -15,6 +15,7 @@ class _ListaState extends State<Lista> {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      key: const Key('listView'),
       itemCount: 6,
       padding: const EdgeInsets.all(0),
       separatorBuilder: (context, index) => Divider(
@@ -22,6 +23,7 @@ class _ListaState extends State<Lista> {
       ),
       itemBuilder: (context, index) {
         return GestureDetector(
+          key: const Key('gestureDetector'),
           onTap: () {
             Navigator.pushNamed(context, "/selected");
           },
@@ -142,6 +144,7 @@ class _ListaState extends State<Lista> {
                 Align(
                   alignment: const Alignment(1, 0.15),
                   child: ElevatedButton(
+                    key: const Key('botãoMapa'),
                     onPressed: () {},
                     child: SvgPicture.asset(
                       "assets/icons/navigation.svg",
@@ -159,6 +162,7 @@ class _ListaState extends State<Lista> {
                 Align(
                   alignment: const Alignment(0.925, -0.9),
                   child: GestureDetector(
+                    key: const Key('botãoFav'),
                     onTap: () {
                       setState(() {
                         _corBookmark =

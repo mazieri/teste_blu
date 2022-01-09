@@ -37,6 +37,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                           ),
                           child: TextField(
+                            key: const ValueKey("barraBusca"),
                             style: const TextStyle(
                               fontSize: 16,
                               color: Color(0xFF707070),
@@ -54,6 +55,7 @@ class HomePage extends StatelessWidget {
                                   "assets/icons/search.svg",
                                   color: Colors.black,
                                   width: 25,
+                                  key: const ValueKey("iconeBusca"),
                                 ),
                               ),
                             ),
@@ -62,6 +64,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Expanded(
                         child: ElevatedButton(
+                          key: const ValueKey("botaoConfig"),
                           onPressed: () {},
                           child: SvgPicture.asset(
                             "assets/icons/options.svg",
@@ -79,11 +82,14 @@ class HomePage extends StatelessWidget {
                   )),
                   const Expanded(
                     flex: 8,
-                    child: Lista(),
+                    child: Lista(
+                      key: ValueKey("lista"),
+                    ),
                   ),
                 ],
               ),
               Align(
+                key: const ValueKey("barraTransparente"),
                 alignment: const Alignment(0, 0.92),
                 child: bottomBar(),
               ),
