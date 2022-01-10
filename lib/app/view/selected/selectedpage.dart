@@ -40,91 +40,88 @@ class SelectedPage extends StatelessWidget {
                           flex: 5,
                           child: SizedBox(),
                         ),
-                        Expanded(
-                          flex: 2,
-                          child: SizedBox(
-                            child: Padding(
-                              padding: const EdgeInsets.all(15),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      const Text(
-                                        "\$ 23,456",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      const SizedBox(
-                                        width: 15,
-                                      ),
-                                      Text(
-                                        "Studio Apartament",
-                                        style: TextStyle(
-                                          color: Colors.white.withOpacity(0.85),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "23 Cross, Hrbr Layout, Bangalore",
-                                        style: TextStyle(
-                                          color: Colors.white.withOpacity(0.85),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Divider(
-                                    color: Colors.white.withOpacity(0.9),
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
-                                    children: [
-                                      SvgPicture.asset(
-                                        "assets/icons/bed.svg",
+                        SizedBox(
+                          height: 125,
+                          child: Padding(
+                            padding: const EdgeInsets.all(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      "\$ 23,456",
+                                      style: TextStyle(
+                                        fontSize: 20,
                                         color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
-                                      Text(
-                                        "3 Bed",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white.withOpacity(0.85),
-                                        ),
+                                    ),
+                                    const SizedBox(
+                                      width: 15,
+                                    ),
+                                    Text(
+                                      "Studio Apartament",
+                                      style: TextStyle(
+                                        color: Colors.white.withOpacity(0.85),
                                       ),
-                                      SvgPicture.asset(
-                                        "assets/icons/bath.svg",
-                                        color: Colors.white,
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "23 Cross, Hrbr Layout, Bangalore",
+                                      style: TextStyle(
+                                        color: Colors.white.withOpacity(0.85),
                                       ),
-                                      Text(
-                                        "2 Bath",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white.withOpacity(0.85),
-                                        ),
+                                    ),
+                                  ],
+                                ),
+                                Divider(
+                                  color: Colors.white.withOpacity(0.9),
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    SvgPicture.asset(
+                                      "assets/icons/bed.svg",
+                                      color: Colors.white,
+                                    ),
+                                    Text(
+                                      "3 Bed",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white.withOpacity(0.85),
                                       ),
-                                      SvgPicture.asset(
-                                        "assets/icons/car.svg",
-                                        color: Colors.white,
+                                    ),
+                                    SvgPicture.asset(
+                                      "assets/icons/bath.svg",
+                                      color: Colors.white,
+                                    ),
+                                    Text(
+                                      "2 Bath",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white.withOpacity(0.85),
                                       ),
-                                      Text(
-                                        "2 Parking",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white.withOpacity(0.85),
-                                        ),
+                                    ),
+                                    SvgPicture.asset(
+                                      "assets/icons/car.svg",
+                                      color: Colors.white,
+                                    ),
+                                    Text(
+                                      "2 Parking",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white.withOpacity(0.85),
                                       ),
-                                    ],
-                                  ),
-                                ],
-                              ),
+                                    ),
+                                  ],
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -142,6 +139,7 @@ class SelectedPage extends StatelessWidget {
                         Expanded(
                           flex: 2,
                           child: SingleChildScrollView(
+                            key: const Key("galeria"),
                             scrollDirection: Axis.horizontal,
                             child: Row(
                               children: [
@@ -306,8 +304,8 @@ class SelectedPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Expanded(
-                          flex: 3,
+                        SizedBox(
+                          height: 150,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -341,6 +339,7 @@ class SelectedPage extends StatelessWidget {
           Align(
             alignment: const Alignment(1, -0.3),
             child: ElevatedButton(
+              key: const Key("mapa"),
               onPressed: () {},
               child: SvgPicture.asset(
                 "assets/icons/navigation.svg",
@@ -356,8 +355,12 @@ class SelectedPage extends StatelessWidget {
           ),
           Align(
             alignment: const Alignment(0.90, -0.875),
-            child: SvgPicture.asset(
-              "assets/icons/bookmark_on.svg",
+            child: GestureDetector(
+              key: const Key("iconeFav"),
+              onTap: () {},
+              child: SvgPicture.asset(
+                "assets/icons/bookmark_on.svg",
+              ),
             ),
           ),
           Align(
@@ -373,6 +376,7 @@ class SelectedPage extends StatelessWidget {
           Align(
             alignment: const Alignment(0, 0.875),
             child: ElevatedButton(
+              key: const Key("check"),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(
                   const Color(0xFF07a581),
