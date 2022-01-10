@@ -1,7 +1,8 @@
+import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
+
 import 'package:teste_blu/app/custom/bottom_bar.dart';
 import 'package:teste_blu/pages.dart';
-import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   setUp(() {
